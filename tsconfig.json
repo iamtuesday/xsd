@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"declaration": true,
+		"removeComments": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"target": "ES2019",
+		"sourceMap": true,
+		"allowJs": false,
+		"incremental": true,
+		"skipLibCheck": true,
+		"outDir": "./dist",
+		"plugins": [
+			{
+				"transform": "ts-auto-mock/transformer",
+				"cacheBetweenTests": true,
+				"debug": true
+			}
+		]
+	},
+	"include": ["src/**/*", "modules/**/*"],
+	"exclude": ["node_modules", "dist", "test", "**/*spec.ts", "**/__mocks__/*"]
+}
