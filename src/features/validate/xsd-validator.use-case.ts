@@ -34,8 +34,13 @@ export class XsdValidatorUseCase {
 	async execute(): Promise<any> {
 		this.requestLogger.debug(`inside ${this.constructor.name}.execute()`)
 
-		const xmlContent = '../../xml/20123456789-01-F001-1.xml'
-		console.log('xmlContent', xmlContent)
+		// const xmlContent = '../../xml/20123456789-01-F001-1.xml'
+
+		/**
+		 * Leer una archivo XML
+		 */
+
+		const xmlContent = fs.readFileSync(path.join(__dirname, '../../xml/20123456789-01-F001-1.xml'), 'utf8')
 
 		const typeCode = '01'
 

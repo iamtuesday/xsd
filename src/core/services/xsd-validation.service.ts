@@ -2,7 +2,7 @@ import { RequestLogger } from '@arisale/infrastructure-setup'
 import { Injectable } from '@nestjs/common'
 import Joi from 'joi'
 import * as libxmljs from 'libxmljs'
-import { XsdInitializerService } from './xds-initializer.service'
+import { XsdInitializerService } from './xsd-initializer.service'
 
 @Injectable()
 export class XsdValidationService {
@@ -11,12 +11,7 @@ export class XsdValidationService {
 	execute(xmlContent: string, typeCode: string, ubl?: string): boolean {
 		this.requestLogger.debug(`inside ${this.constructor.name}.execute()`)
 
-		console.log('xmlContent', xmlContent)
-		console.log('typeCode', typeCode)
-
-		const schema = this.xsdInitializerService.getXsdSchema(typeCode)
-
-		console.log('schema', schema)
+		const schema = this.xsdInitializerService.getXsd(typeCode)
 
 		try {
 			// Parse the XML document

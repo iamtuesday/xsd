@@ -1,15 +1,15 @@
 import { Module, OnModuleInit } from '@nestjs/common'
 import { XsdLoaderService } from './xds-loader.service'
+import { XsdInitializerService } from './xsd-initializer.service'
 
 @Module({
-	providers: [XsdLoaderService],
-	exports: [XsdLoaderService]
+	providers: [XsdLoaderService, XsdInitializerService],
+	exports: [XsdLoaderService, XsdInitializerService]
 })
 export class XsdModule implements OnModuleInit {
-	constructor(private readonly xsdLoaderService: XsdLoaderService) {}
+	constructor(private readonly xsdInitializerService: XsdInitializerService) {}
 
 	async onModuleInit() {
-		console.log('inside XsdModule.onModuleInit()')
-		await this.xsdLoaderService.loadXsdSchemas()
+		this.xsdInitializerService.loadAllXsd()
 	}
 }
