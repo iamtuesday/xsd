@@ -1,203 +1,365 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
-  <ext:UBLExtensions>
-    <ext:UBLExtension>
-      <ext:ExtensionContent>
-      <ds:Signature Id="FePrimerSign">
-<ds:SignedInfo>
-  <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
-  <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
-  <ds:Reference URI="">
-    <ds:Transforms>
-      <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
-    </ds:Transforms>
-    <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
-    <ds:DigestValue>/wKIPKeZOhFEIOIyP1+T4AJDpfw=</ds:DigestValue>
-  </ds:Reference>
-</ds:SignedInfo>
-<ds:SignatureValue>s/YMWZEOdpeiQ6olgb88ICppr8wOE6fNvmLZ/PQd5BTTN+fTCHOvAj8snOs7MAhP
-PsO8cm3HiUeiReEiI1pHpJFpwLK8MjdSbemPqI/5wChMW4czhw7eRLHDMhiotNfe
-imCDU1rRG18VG+ipE5oHjQOsa1x5z9ogZ0qXIfmGIx84RoLl8mBjnnGVWlxsmzWz
-Ep+785MJWa6O1BDusO8kxFkGdTiTtTanWtyq5W0cAcnxZdjelPZ5ME40DEuYDqZw
-g3dW1/i7fiS2KbUgvHN0v6QSht82fp2LhtK72NDDDRP4VX8ge9a2wAQMgZcRI26f
-4Nh6kYaldGKGi6T4Lmh6YQ==</ds:SignatureValue>
-<ds:KeyInfo>
-  <ds:X509Data>
-    <ds:X509Certificate>MIID6zCCAtOgAwIBAgIUJB9kdlrtEuCWZW/hB+k6bt/FL7AwDQYJKoZIhvcNAQELBQAwgYQxCzAJBgNVBAYTAlBFMQ0wCwYDVQQIDARMSU1BMQ0wCwYDVQQHDARMSU1BMRgwFgYDVQQKDA9JTU0gQ09SUE9SQVRJT04xCzAJBgNVBAsMAklUMQwwCgYDVQQDDANJTU0xIjAgBgkqhkiG9w0BCQEWE2dpYW5zYWxleEBnbWFpbC5jb20wHhcNMjAwNzE5MjIwNDM2WhcNMzAwNTI4MjIwNDM2WjCBhDELMAkGA1UEBhMCUEUxDTALBgNVBAgMBExJTUExDTALBgNVBAcMBExJTUExGDAWBgNVBAoMD0lNTSBDT1JQT1JBVElPTjELMAkGA1UECwwCSVQxDDAKBgNVBAMMA0lNTTEiMCAGCSqGSIb3DQEJARYTZ2lhbnNhbGV4QGdtYWlsLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMjdt0KR5Bb/nIH1dGMKBkYlSHeScl5Go+KD4LEKDwi4hFcKvOI7XbNk1QoFmcKIPJuZvpBpqaadNRKidqAPxbrzMF+yxXI7QwlsVgweW+L64bXCtX4AlnRaCCIx0SrXYUrktVWWlQpaJGvF7n3Mbge+8P9jkyQ7XlAuVVRN2wk40G1UPWMYRVaVjas4JPh7eTft1B6R1d1njM5/dD3UJ0qSfgjw5b8FJae6Up5eEDAfcjkJihqVBtQHXI8yEHMRqx22OF8VsT+AsrylYGDpDesCz9WrF0cWpg3XNT1YUV5YfwqCNBK4vN++5qgA9Q+MYmE+KdZ0mFmMZxlm6NOeQfUCAwEAAaNTMFEwHQYDVR0OBBYEFLEP+8lmc8esD3bMYoSivwthb6gHMB8GA1UdIwQYMBaAFLEP+8lmc8esD3bMYoSivwthb6gHMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBACsrChqr7MpgEN0I+IqmgG4Kd4M5BBiz7jabnXMwcQfeduLL1RV7JkbI4EWF+SSpjpdojM35bxb8lyA43GpiFIaEAWa2frUJi/hXxvTn5eojwi6FU0zs7mHBHUSU+aOjBp/6TTnGR8LEemSJ1o7shaxHTaquNOHol/JV0QFTCn1hMPo44jpNwiDOngKDAc9TvQ3YUIURGrrE3j35c5KNGr4wDjjcjFky4OBhFRALU+9ff/Gergv03xyUDnfMtzYNomM15xO0jYou8FeQd7vzyh56ekJpI+EkX3YM/zABa/5NwXSpNK79gaWxS1SSuXrCZU4pqnVVy96V1zq5t1umbvA=</ds:X509Certificate>
-  </ds:X509Data>
-</ds:KeyInfo>
-</ds:Signature></ext:ExtensionContent>
-    </ext:UBLExtension>
-  </ext:UBLExtensions>
-  <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
-  <cbc:CustomizationID>2.0</cbc:CustomizationID>
-  <cbc:ID>F001-1</cbc:ID>
-  <cbc:IssueDate>2020-07-21</cbc:IssueDate>
-  <cbc:InvoiceTypeCode
-        listID="0101"
-        listAgencyName="PE:SUNAT"
-        listName="Tipo de Documento"
-        listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01">01</cbc:InvoiceTypeCode>
-  <cbc:Note languageLocaleID="1000"><![CDATA[CIENTO DIECIOCHO CON 00 /100 SOLES]]></cbc:Note>
-  <cbc:DocumentCurrencyCode
-        listID="ISO 4217 Alpha"
-        listName="Currency"
-        listAgencyName="United Nations Economic Commission for Europe">PEN</cbc:DocumentCurrencyCode>
-  <cac:Signature>
-    <cbc:ID>20123456789</cbc:ID>
-    <cac:SignatoryParty>
-      <cac:PartyIdentification>
-        <cbc:ID>20123456789</cbc:ID>
-      </cac:PartyIdentification>
-      <cac:PartyName>
-        <cbc:Name><![CDATA[MI EMPRESA S.A.C]]></cbc:Name>
-      </cac:PartyName>
-    </cac:SignatoryParty>
-    <cac:DigitalSignatureAttachment>
-      <cac:ExternalReference>
-        <cbc:URI>#EMPRESA-SIGN</cbc:URI>
-      </cac:ExternalReference>
-    </cac:DigitalSignatureAttachment>
-  </cac:Signature>
-  <cac:AccountingSupplierParty>
-    <cac:Party>
-      <cac:PartyIdentification>
-        <cbc:ID
-            schemeID="6"
-            schemeName="Documento de Identidad"
-            schemeAgencyName="PE:SUNAT"
-            schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20123456789</cbc:ID>
-      </cac:PartyIdentification>
-      <cac:PartyName>
-        <cbc:Name><![CDATA[MI EMPRESA]]></cbc:Name>
-      </cac:PartyName>
-      <cac:PartyLegalEntity>
-        <cbc:RegistrationName><![CDATA[MI EMPRESA S.A.C]]></cbc:RegistrationName>
-        <cac:RegistrationAddress>
-          <cbc:ID schemeName="Ubigeos"
-                  schemeAgencyName="PE:INEI">150101</cbc:ID>
-          <cbc:AddressTypeCode>0000</cbc:AddressTypeCode>
-          <cbc:CitySubdivisionName>CASUARINAS</cbc:CitySubdivisionName>
-          <cbc:CityName>LIMA</cbc:CityName>
-          <cbc:CountrySubentity>LIMA</cbc:CountrySubentity>
-          <cbc:District>LIMA</cbc:District>
-          <cac:AddressLine>
-            <cbc:Line><![CDATA[Av. Park 211]]></cbc:Line>
-          </cac:AddressLine>
-          <cac:Country>
-            <cbc:IdentificationCode
-                listID="ISO 3166-1"
-                listName="Country"
-                listAgencyName="United Nations Economic Commission for Europe">PE</cbc:IdentificationCode>
-          </cac:Country>
-        </cac:RegistrationAddress>
-      </cac:PartyLegalEntity>
-    </cac:Party>
-  </cac:AccountingSupplierParty>
-  <cac:AccountingCustomerParty>
-    <cac:Party>
-      <cac:PartyIdentification>
-        <cbc:ID
-            schemeID="6"
-            schemeName="Documento de Identidad"
-            schemeAgencyName="PE:SUNAT"
-            schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo06">20603343710</cbc:ID>
-      </cac:PartyIdentification>
-      <cac:PartyLegalEntity>
-        <cbc:RegistrationName><![CDATA[NEGOCIOS S.A.C.]]></cbc:RegistrationName>
-        <cac:RegistrationAddress>
-          <cbc:ID>150101</cbc:ID>
-          <cac:AddressLine>
-            <cbc:Line><![CDATA[AV. OLIVAR NRO. 425 ]]></cbc:Line>
-          </cac:AddressLine>
-          <cac:Country>
-            <cbc:IdentificationCode
-                listID="ISO 3166-1"
-                listName="Country"
-                listAgencyName="United Nations Economic Commission for Europe">PE</cbc:IdentificationCode>
-          </cac:Country>
-        </cac:RegistrationAddress>
-      </cac:PartyLegalEntity>
-    </cac:Party>
-  </cac:AccountingCustomerParty>
-  <cac:PaymentTerms>
-    <cbc:ID>FormaPago</cbc:ID>
-    <cbc:PaymentMeansID>Contado</cbc:PaymentMeansID>
-  </cac:PaymentTerms>
-  <cac:TaxTotal>
-    <cbc:TaxAmount currencyID="PEN">18.00</cbc:TaxAmount>
-    <cac:TaxSubtotal>
-      <cbc:TaxableAmount currencyID="PEN">100.00</cbc:TaxableAmount>
-      <cbc:TaxAmount currencyID="PEN">18.00</cbc:TaxAmount>
-      <cac:TaxCategory>
-        <cac:TaxScheme>
-          <cbc:ID
-                schemeName="Codigo de tributos"
-                schemeAgencyName="PE:SUNAT"
-                schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo05">1000</cbc:ID>
-          <cbc:Name>IGV</cbc:Name>
-          <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
-        </cac:TaxScheme>
-      </cac:TaxCategory>
-    </cac:TaxSubtotal>
-  </cac:TaxTotal>
-  <cac:LegalMonetaryTotal>
-    <cbc:LineExtensionAmount currencyID="PEN">100.00</cbc:LineExtensionAmount>
-    <cbc:TaxInclusiveAmount currencyID="PEN">118.00</cbc:TaxInclusiveAmount>
-    <cbc:PayableAmount currencyID="PEN">118.00</cbc:PayableAmount>
-  </cac:LegalMonetaryTotal>
-  <cac:InvoiceLine>
-    <cbc:ID>1</cbc:ID>
-    <cbc:InvoicedQuantity
-        unitCode="NIU"
-        unitCodeListID="UN/ECE rec 20"
-        unitCodeListAgencyName="United Nations Economic Commission for Europe">2</cbc:InvoicedQuantity>
-    <cbc:LineExtensionAmount currencyID="PEN">100.00</cbc:LineExtensionAmount>
-    <cac:PricingReference>
-      <cac:AlternativeConditionPrice>
-        <cbc:PriceAmount currencyID="PEN">59</cbc:PriceAmount>
-        <cbc:PriceTypeCode
-            listName="Tipo de Precio"
-            listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo16"
-            listAgencyName="PE:SUNAT">01</cbc:PriceTypeCode>
-      </cac:AlternativeConditionPrice>
-    </cac:PricingReference>
-    <cac:TaxTotal>
-      <cbc:TaxAmount currencyID="PEN">18.00</cbc:TaxAmount>
-      <cac:TaxSubtotal>
-        <cbc:TaxableAmount currencyID="PEN">100.00</cbc:TaxableAmount>
-        <cbc:TaxAmount currencyID="PEN">18.00</cbc:TaxAmount>
-        <cac:TaxCategory>
-          <cbc:Percent>18</cbc:Percent>
-          <cbc:TaxExemptionReasonCode
-                listName="Afectacion del IGV"
-                listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo07"
-                listAgencyName="PE:SUNAT">10</cbc:TaxExemptionReasonCode>
-          <cac:TaxScheme>
-            <cbc:ID
-                schemeName="Codigo de tributos"
-                schemeAgencyName="PE:SUNAT"
-                schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo05">1000</cbc:ID>
-            <cbc:Name>IGV</cbc:Name>
-            <cbc:TaxTypeCode>VAT</cbc:TaxTypeCode>
-          </cac:TaxScheme>
-        </cac:TaxCategory>
-      </cac:TaxSubtotal>
-    </cac:TaxTotal>
-    <cac:Item>
-      <cbc:Description><![CDATA[TIJERAS - PRUEBA DE SISTEMAS]]></cbc:Description>
-      <cac:SellersItemIdentification>
-        <cbc:ID>P001</cbc:ID>
-      </cac:SellersItemIdentification>
-      <cac:CommodityClassification>
-        <cbc:ItemClassificationCode
-          listID="UNSPSC"
-          listAgencyName="GS1 US"
-          listName="Item Classification">44121618</cbc:ItemClassificationCode>
-      </cac:CommodityClassification>
-    </cac:Item>
-    <cac:Price>
-      <cbc:PriceAmount currencyID="PEN">50</cbc:PriceAmount>
-    </cac:Price>
-  </cac:InvoiceLine>
-</Invoice>
+<Invoice
+	xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+	<ext:UBLExtensions
+		xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+		<ext:UBLExtension>
+			<ext:ExtensionContent>
+				<ds:Signature
+					xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="SignSUNAT">
+					<ds:SignedInfo>
+						<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+						<ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+						<ds:Reference URI="">
+							<ds:Transforms>
+								<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+								<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+							</ds:Transforms>
+							<ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+							<ds:DigestValue>zj40fDFxtkERWuW09vU+deCkUMk=</ds:DigestValue>
+						</ds:Reference>
+					</ds:SignedInfo>
+					<ds:SignatureValue> yaS0iA7jZeGaycqUC5v0Y3WbebhGbDUM8jCpMXKH2zABIo5oOO6ruBx1ZmYVT+iVLFxIMPysoBl7 umI7W+OeQkrJ7K8NbJrB1Vcyyn58EXN/Aq3PqHuAq8U710gwdZTmU35G+VFf2WeLM9TRSlhmeRqD J4z/Vm7Y9F5bqim5JL+HaSfnHnAu+XuR3j8j9PE7gxQGOsdcTvHt8o5FWKv5KaFUFewwlHGcWMvH zeKBiwvUasZ0rysUICJgh/eguwy5xZ+I7nSU7F5yr1zcsk2Dw2Ejd70r0iKNO1VTjSlDDzko0cA3 29Hshr5NwKwKhpf9XoUjKArHp2splTpl9hJllA== </ds:SignatureValue>
+					<ds:KeyInfo>
+						<ds:X509Data>
+							<ds:X509Certificate> MIIFczCCBFugAwIBAgIIDPoxBgdrUFwwDQYJKoZIhvcNAQELBQAwRjEkMCIGA1UEAwwbTGxhbWEu cGUgU0hBMjU2IFN0YW5kYXJkIENBMREwDwYDVQQKDAhMTEFNQS5QRTELMAkGA1UEBhMCUEUwHhcN MjIwNTAzMjMzNzU0WhcNMjUwNTAyMjMzNzAwWjCCARYxODA2BgNVBAkML0FWLiBDSVJDVU5WQUxB Q0lPTiBERUwgR09MRi4gTlJPLiAxMzQgSU5ULiAxMjAxMSUwIwYJKoZIhvcNAQkBFhZtYXJjZWxv QGFyaXNhbGUuY29tLnBlMSwwKgYDVQQDDCNTT0ZUV0FSRSBERSBGQUNUVVJBQ0lPTiBFTEVDVFJP TklDQTEsMCoGA1UECwwjRkFDVFVSQSBFTEVDVFJPTklDQSBSVUMgMjA2MDI4NjQ5MzcxITAfBgNV BAsMGFZhbGlkYWRvIHBvciBMbGFtYS5wZSBFUjEYMBYGA1UECgwPQVJJR1JPVVAgUy5BLkMuMQ0w CwYDVQQHDARMSU1BMQswCQYDVQQGEwJQRTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEB ANN/CM0TyWrsemJ1W1oGnOf0pgOsuCA80xbxTjpVQvw6oVQwR1EZvVBQQRmTwWPu7rHmlqBh3+WC H/sqqd+hd4EM0eXgga+11s7dcopRUYUk21N8Kv1D7/uQYFR59YZpXHuIc6WQO1eV3ajhShC+ejXQ Eqt2mgxLruWZee0ydQkWDnFbp3hr/L1JS1PD1ZzBdEp1VODFyrmloz/GBXlfU902jbLv60o73U8+ p1YxIvA7pq7FolDrZJ+w4T3S6TjdwOjOGndCK64GpH/+jxNFA2KnuEq27GSEmh8H0pjgtMLOEpKJ OlSh2ygsMnwGWzAzyBf2ZkmUe+aGpmWokWo1G48CAwEAAaOCAZEwggGNMAwGA1UdEwEB/wQCMAAw HwYDVR0jBBgwFoAUXYhbretl+/5oouTZbz1XcqLvK5kwZwYIKwYBBQUHAQEEWzBZMDUGCCsGAQUF BzAChilodHRwOi8vY3J0LmxsYW1hLnBlL2xsYW1hcGVzdGFuZGFyZGNhLmNlcjAgBggrBgEFBQcw AYYUaHR0cDovL29jc3AubGxhbWEucGUwIQYDVR0RBBowGIEWbWFyY2Vsb0BhcmlzYWxlLmNvbS5w ZTBGBgNVHSAEPzA9MDsGDSsGAQQBg5d3AAEAAwEwKjAoBggrBgEFBQcCARYcaHR0cHM6Ly9sbGFt YS5wZS9yZXBvc2l0b3J5LzAdBgNVHSUEFjAUBggrBgEFBQcDAgYIKwYBBQUHAwQwOgYDVR0fBDMw MTAvoC2gK4YpaHR0cDovL2NybC5sbGFtYS5wZS9sbGFtYXBlc3RhbmRhcmRjYS5jcmwwHQYDVR0O BBYEFKlk1Fdb7qJe1QPxdgbEdYFTr8sAMA4GA1UdDwEB/wQEAwIGwDANBgkqhkiG9w0BAQsFAAOC AQEAD/VXZHJu0EJvmMQC6j1RNcK39ls4tGyMHLyv8lZWvCNhgh3nhDUwilYO4QIrszoE9yQg4wAF VVcJD5xU30MGuBw6ZYg/iOMceahwR7C7WG3sZWEf9/FQ2kdmY3idQ5lol/otAc1XwwAIEt9Z+yds dosau4Zgf6d3W1NnBGK6Yj2L/0k9J0kuAeTPcSxYWsA5bkFYea+HOoM6wQ4HlLtMnstSZWG0zDTw WrcZ8B9vcIKTUTx2FBESVOAb05zpbesR+pTZDs5FYvyPW6Tb/Bb5Wb0sV/o3yXsN1/gxp9gFbpyn iYp25yfEa+zjb+ZDvR04BMaHfPvLwVgM/Mb8QeOBsA== </ds:X509Certificate>
+							<ds:X509SubjectName>C=PE,L=LIMA,O=ARIGROUP S.A.C.,OU=Validado por Llama.pe ER,OU=FACTURA ELECTRONICA RUC 20602864937,CN=SOFTWARE DE FACTURACION ELECTRONICA</ds:X509SubjectName>
+						</ds:X509Data>
+					</ds:KeyInfo>
+				</ds:Signature>
+			</ext:ExtensionContent>
+		</ext:UBLExtension>
+	</ext:UBLExtensions>
+	<cbc:UBLVersionID
+		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">2.1
+	</cbc:UBLVersionID>
+	<cbc:CustomizationID
+		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">2.0
+	</cbc:CustomizationID>
+	<cbc:ProfileID
+		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" schemeAgencyName="PE:SUNAT" schemeName="SUNAT:Identificador de Tipo de Operación" schemeURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo17">0101
+	</cbc:ProfileID>
+	<cbc:ID
+		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">B002-00000015
+	</cbc:ID>
+	<cbc:IssueDate
+		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">2022-10-17
+	</cbc:IssueDate>
+	<cbc:IssueTime
+		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">10:13:04
+	</cbc:IssueTime>
+	<cbc:InvoiceTypeCode
+		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" listAgencyName="PE:SUNAT" listID="0101" listName="Tipo de Documento" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01">03
+	</cbc:InvoiceTypeCode>
+	<cbc:Note
+		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" languageLocaleID="1000">SIETE CON 00/100
+	</cbc:Note>
+	<cbc:DocumentCurrencyCode
+		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">PEN
+	</cbc:DocumentCurrencyCode>
+	<cac:Signature
+		xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+		<cbc:ID
+			xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">SignSUNAT
+		</cbc:ID>
+		<cac:SignatoryParty>
+			<cac:PartyIdentification>
+				<cbc:ID
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">20325288991
+				</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">ANCHOVETA S.A.C.
+				</cbc:Name>
+			</cac:PartyName>
+		</cac:SignatoryParty>
+		<cac:DigitalSignatureAttachment>
+			<cac:ExternalReference>
+				<cbc:URI
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">#SignSUNAT
+				</cbc:URI>
+			</cac:ExternalReference>
+		</cac:DigitalSignatureAttachment>
+	</cac:Signature>
+	<cac:AccountingSupplierParty
+		xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" schemeID="6">20325288991
+				</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">ANCHOVETA S.A.C.
+				</cbc:Name>
+			</cac:PartyName>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">ANCHOVETA S.A.C.
+				</cbc:RegistrationName>
+				<cac:RegistrationAddress>
+					<cbc:ID
+						xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">110211
+					</cbc:ID>
+					<cbc:AddressTypeCode
+						xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" listAgencyName="PE:SUNAT" listName="Establecimientos anexos">0000
+					</cbc:AddressTypeCode>
+					<cbc:CityName
+						xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Chincha
+					</cbc:CityName>
+					<cbc:District
+						xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Tambo de Mora
+					</cbc:District>
+					<cac:AddressLine>
+						<cbc:Line
+							xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">AV. INDUSTRIAL NRO. 501 Ica - Chincha - Tambo de Mora
+						</cbc:Line>
+					</cac:AddressLine>
+					<cac:Country>
+						<cbc:IdentificationCode
+							xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">PE
+						</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:RegistrationAddress>
+			</cac:PartyLegalEntity>
+		</cac:Party>
+	</cac:AccountingSupplierParty>
+	<cac:AccountingCustomerParty
+		xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" schemeID="1">00000000
+				</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyLegalEntity>
+				<cbc:RegistrationName
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">General
+				</cbc:RegistrationName>
+				<cac:RegistrationAddress>
+					<cac:AddressLine>
+						<cbc:Line
+							xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+						</cac:AddressLine>
+						<cac:Country>
+							<cbc:IdentificationCode
+								xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"/>
+							</cac:Country>
+						</cac:RegistrationAddress>
+					</cac:PartyLegalEntity>
+				</cac:Party>
+			</cac:AccountingCustomerParty>
+			<cac:AllowanceCharge
+				xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+				<cbc:ChargeIndicator
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">true
+				</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReasonCode
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">46
+				</cbc:AllowanceChargeReasonCode>
+				<cbc:Amount
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">0.55
+				</cbc:Amount>
+			</cac:AllowanceCharge>
+			<cac:AllowanceCharge
+				xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+				<cbc:ChargeIndicator
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">true
+				</cbc:ChargeIndicator>
+				<cbc:AllowanceChargeReasonCode
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">50
+				</cbc:AllowanceChargeReasonCode>
+				<cbc:Amount
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">0.00
+				</cbc:Amount>
+			</cac:AllowanceCharge>
+			<cac:TaxTotal
+				xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+				<cbc:TaxAmount
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">0.98
+				</cbc:TaxAmount>
+				<cac:TaxSubtotal>
+					<cbc:TaxableAmount
+						xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">5.47
+					</cbc:TaxableAmount>
+					<cbc:TaxAmount
+						xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">0.98
+					</cbc:TaxAmount>
+					<cac:TaxCategory>
+						<cbc:ID
+							xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" schemeAgencyName="PE:SUNAT" schemeName="Codigo de tributos">S
+						</cbc:ID>
+						<cac:TaxScheme>
+							<cbc:ID
+								xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" schemeAgencyName="PE:SUNAT" schemeName="Codigo de tributos">1000
+							</cbc:ID>
+							<cbc:Name
+								xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">IGV
+							</cbc:Name>
+							<cbc:TaxTypeCode
+								xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">VAT
+							</cbc:TaxTypeCode>
+						</cac:TaxScheme>
+					</cac:TaxCategory>
+				</cac:TaxSubtotal>
+			</cac:TaxTotal>
+			<cac:LegalMonetaryTotal
+				xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+				<cbc:LineExtensionAmount
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">5.47
+				</cbc:LineExtensionAmount>
+				<cbc:TaxInclusiveAmount
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">6.45
+				</cbc:TaxInclusiveAmount>
+				<cbc:ChargeTotalAmount
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">0.55
+				</cbc:ChargeTotalAmount>
+				<cbc:PayableRoundingAmount
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">0.00
+				</cbc:PayableRoundingAmount>
+				<cbc:PayableAmount
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">7.00
+				</cbc:PayableAmount>
+			</cac:LegalMonetaryTotal>
+			<cac:InvoiceLine
+				xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+				<cbc:ID
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1
+				</cbc:ID>
+				<cbc:InvoicedQuantity
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" unitCode="NIU">1.0000000000
+				</cbc:InvoicedQuantity>
+				<cbc:LineExtensionAmount
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">3.13
+				</cbc:LineExtensionAmount>
+				<cbc:FreeOfChargeIndicator
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">false
+				</cbc:FreeOfChargeIndicator>
+				<cac:PricingReference>
+					<cac:AlternativeConditionPrice>
+						<cbc:PriceAmount
+							xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">3.6875000000
+						</cbc:PriceAmount>
+						<cbc:PriceTypeCode
+							xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" listAgencyName="PE:SUNAT" listName="Tipo de Precio" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo16">01
+						</cbc:PriceTypeCode>
+					</cac:AlternativeConditionPrice>
+				</cac:PricingReference>
+				<cac:TaxTotal>
+					<cbc:TaxAmount
+						xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">0.56
+					</cbc:TaxAmount>
+					<cac:TaxSubtotal>
+						<cbc:TaxableAmount
+							xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">3.13
+						</cbc:TaxableAmount>
+						<cbc:TaxAmount
+							xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">0.56
+						</cbc:TaxAmount>
+						<cac:TaxCategory>
+							<cbc:ID
+								xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" schemeAgencyName="PE:SUNAT" schemeName="Codigo de tributos">S
+							</cbc:ID>
+							<cbc:Percent
+								xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">18
+							</cbc:Percent>
+							<cbc:TaxExemptionReasonCode
+								xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" listAgencyName="PE:SUNAT" listName="Afectacion del IGV" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo07">10
+							</cbc:TaxExemptionReasonCode>
+							<cac:TaxScheme>
+								<cbc:ID
+									xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" schemeAgencyName="PE:SUNAT" schemeName="Codigo de tributos">1000
+								</cbc:ID>
+								<cbc:Name
+									xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">IGV
+								</cbc:Name>
+								<cbc:TaxTypeCode
+									xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">VAT
+								</cbc:TaxTypeCode>
+							</cac:TaxScheme>
+						</cac:TaxCategory>
+					</cac:TaxSubtotal>
+				</cac:TaxTotal>
+				<cac:Item>
+					<cbc:Description
+						xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">Grolsh Pilsener 450 Ml botella
+					</cbc:Description>
+				</cac:Item>
+				<cac:Price>
+					<cbc:PriceAmount
+						xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">3.1250000000
+					</cbc:PriceAmount>
+				</cac:Price>
+			</cac:InvoiceLine>
+			<cac:InvoiceLine
+				xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+				<cbc:ID
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">2
+				</cbc:ID>
+				<cbc:InvoicedQuantity
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" unitCode="NIU">1.0000000000
+				</cbc:InvoicedQuantity>
+				<cbc:LineExtensionAmount
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">2.34
+				</cbc:LineExtensionAmount>
+				<cbc:FreeOfChargeIndicator
+					xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">false
+				</cbc:FreeOfChargeIndicator>
+				<cac:PricingReference>
+					<cac:AlternativeConditionPrice>
+						<cbc:PriceAmount
+							xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">2.7656300000
+						</cbc:PriceAmount>
+						<cbc:PriceTypeCode
+							xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" listAgencyName="PE:SUNAT" listName="Tipo de Precio" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo16">01
+						</cbc:PriceTypeCode>
+					</cac:AlternativeConditionPrice>
+				</cac:PricingReference>
+				<cac:TaxTotal>
+					<cbc:TaxAmount
+						xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">0.42
+					</cbc:TaxAmount>
+					<cac:TaxSubtotal>
+						<cbc:TaxableAmount
+							xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">2.34
+						</cbc:TaxableAmount>
+						<cbc:TaxAmount
+							xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">0.42
+						</cbc:TaxAmount>
+						<cac:TaxCategory>
+							<cbc:ID
+								xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" schemeAgencyName="PE:SUNAT" schemeName="Codigo de tributos">S
+							</cbc:ID>
+							<cbc:Percent
+								xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">18
+							</cbc:Percent>
+							<cbc:TaxExemptionReasonCode
+								xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" listAgencyName="PE:SUNAT" listName="Afectacion del IGV" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo07">10
+							</cbc:TaxExemptionReasonCode>
+							<cac:TaxScheme>
+								<cbc:ID
+									xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" schemeAgencyName="PE:SUNAT" schemeName="Codigo de tributos">1000
+								</cbc:ID>
+								<cbc:Name
+									xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">IGV
+								</cbc:Name>
+								<cbc:TaxTypeCode
+									xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">VAT
+								</cbc:TaxTypeCode>
+							</cac:TaxScheme>
+						</cac:TaxCategory>
+					</cac:TaxSubtotal>
+				</cac:TaxTotal>
+				<cac:Item>
+					<cbc:Description
+						xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">GALLETA SODA FIELD ORIG. 34G
+					</cbc:Description>
+				</cac:Item>
+				<cac:Price>
+					<cbc:PriceAmount
+						xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" currencyID="PEN">2.3437500000
+					</cbc:PriceAmount>
+				</cac:Price>
+			</cac:InvoiceLine>
+		</Invoice>

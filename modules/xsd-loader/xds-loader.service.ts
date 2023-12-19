@@ -44,41 +44,40 @@ export class XsdLoaderService {
 	}
 
 	xmlToJson(xml: any): any {
-		// Create the return object
 		let obj: any = {}
 
-		if (xml.nodeType == 1) {
-			// element
-			// do attributes
-			if (xml.attributes.length > 0) {
+		if (xml.type() === 'element') {
+			// Element node
+			const attributes = xml.attrs()
+			if (attributes.length > 0) {
 				obj['@attributes'] = {}
-				for (let j = 0; j < xml.attributes.length; j++) {
-					const attribute = xml.attributes.item(j)
-					obj['@attributes'][attribute.nodeName] = attribute.nodeValue
+				for (const attribute of attributes) {
+					obj['@attributes'][attribute.name()] = attribute.value()
 				}
 			}
-		} else if (xml.nodeType == 3) {
-			// text
-			obj = xml.nodeValue
+
+			// Process child nodes
+			const childNodes = xml.childNodes()
+			if (childNodes.length > 0) {
+				for (const childNode of childNodes) {
+					const nodeName = childNode.name()
+					if (!obj[nodeName]) {
+						obj[nodeName] = this.xmlToJson(childNode)
+					} else {
+						if (!Array.isArray(obj[nodeName])) {
+							const old = obj[nodeName]
+							obj[nodeName] = []
+							obj[nodeName].push(old)
+						}
+						obj[nodeName].push(this.xmlToJson(childNode))
+					}
+				}
+			}
+		} else if (xml.type() === 'text') {
+			// Text node
+			obj = xml.text()
 		}
 
-		// do children
-		if (xml.hasChildNodes()) {
-			for (let i = 0; i < xml.childNodes.length; i++) {
-				const item = xml.childNodes.item(i)
-				const nodeName = item.nodeName
-				if (typeof obj[nodeName] == 'undefined') {
-					obj[nodeName] = this.xmlToJson(item)
-				} else {
-					if (typeof obj[nodeName].push == 'undefined') {
-						const old = obj[nodeName]
-						obj[nodeName] = []
-						obj[nodeName].push(old)
-					}
-					obj[nodeName].push(this.xmlToJson(item))
-				}
-			}
-		}
 		return obj
 	}
 

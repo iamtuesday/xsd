@@ -1,5 +1,4 @@
 import { Module } from '@nestjs/common'
-import { XsdModule } from '../modules/xsd-loader/xsd-loader.module'
 import { CoreModule } from './core/core.module'
 import { XsdValidatorModule } from './features/validate/xsd-validator.module'
 
@@ -9,8 +8,7 @@ import { XsdValidatorModule } from './features/validate/xsd-validator.module'
 		/**
 		 * Features
 		 */
-		XsdValidatorModule,
-		XsdModule
+		XsdValidatorModule
 	]
 })
 export class AppModule {}

@@ -1,6 +1,8 @@
 import { AppOperation } from '@arisale/infrastructure-setup'
-import { Controller, Post, Scope } from '@nestjs/common'
+import { Body, Controller, Post, Scope } from '@nestjs/common'
+import { ApiOkResponse } from '@nestjs/swagger'
 import { XsdValidationResponse } from '../../core/models/xsd-validation-response.model'
+import { ValidateDto } from './validate.dto'
 import { XsdValidatorUseCase } from './xsd-validator.use-case'
 
 @Controller({ scope: Scope.REQUEST, path: '/xsd-validator' })
@@ -13,7 +15,8 @@ export class XsdValidatorHttpController {
 	} */
 
 	@AppOperation(Post(), 'xsd-validator')
-	async execute(): Promise<XsdValidationResponse> {
-		return await this.xsdValidatorUseCase.execute()
+	@ApiOkResponse({ type: XsdValidationResponse })
+	async execute(@Body() validateDto: ValidateDto): Promise<XsdValidationResponse> {
+		return await this.xsdValidatorUseCase.execute(validateDto)
 	}
 }

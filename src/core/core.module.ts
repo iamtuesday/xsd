@@ -11,7 +11,7 @@ import { XsdValidationService } from './services/xsd-validation.service'
 export class CoreModule implements OnModuleInit {
 	constructor(private readonly xsdInitializerService: XsdInitializerService) {}
 
-	onModuleInit() {
-		this.xsdInitializerService.loadAllXsd()
+	async onModuleInit(): Promise<void> {
+		await this.xsdInitializerService.loadAllXsd()
 	}
 }
