@@ -1,6 +1,5 @@
 import { RequestLogger } from '@arisale/infrastructure-setup'
-import { Injectable } from '@nestjs/common'
-import * as libxmljs from 'libxmljs'
+import { BadRequestException, ConflictException, Injectable } from '@nestjs/common'
 import * as xml2js from 'xml2js'
 
 import { XsdInitializerService } from './xsd-initializer.service'
@@ -9,44 +8,66 @@ import { XsdInitializerService } from './xsd-initializer.service'
 export class XsdValidationService {
 	constructor(private readonly requestLogger: RequestLogger, private readonly xsdInitializerService: XsdInitializerService) {}
 
-	async execute(xmlContent: string, typeCode: string, ubl?: string): Promise<boolean> {
+	async execute(xmlContent: string, typeCode: string): Promise<void> {
 		this.requestLogger.debug(`inside ${this.constructor.name}.execute()`)
 
+		/**
+		 * Obtener el esquema XSD (JOI Schema)
+		 */
 		const schema = await this.xsdInitializerService.getXsd(typeCode)
 
 		try {
-			// Parse the XML document
-			const xmlDoc = libxmljs.parseXml(xmlContent)
+			/**
+			 * Parsear el contenido XML
+			 */
+			// const xmlDoc = libxmljs.parseXml(xmlContent)
 
-			//Convert the parsed XML document to a JavaScript object
+			/**
+			 * Convertir el XML a objeto
+			 */
 			const xmlObject = await new Promise<any>((resolve, reject) => {
-				xml2js.parseString(xmlDoc.toString(), { explicitArray: false, mergeAttrs: true }, (err, result) => {
+				xml2js.parseString(xmlContent.toString(), { explicitArray: false, mergeAttrs: true }, (err, result) => {
 					if (err) {
 						reject(err)
 					} else {
-						// console.log(JSON.stringify(result, null, 2))
-
 						resolve(result)
 					}
 				})
 			})
 
-			console.log('xmlObject', JSON.stringify(xmlObject, null, 2))
-
+			/**
+			 * Validar el objeto XML
+			 */
 			const validationResult = schema.validate(xmlObject)
 
 			if (validationResult.error) {
-				// this.requestLogger.verbose(`validationResult.error = ${JSON.stringify(validationResult.error)}`)
+				this.requestLogger.verbose(`validationResult.error = ${JSON.stringify(validationResult.error.message)}`)
 
-				console.log('error', validationResult.error)
+				/**
+				 * Mapear details
+				 */
+
+				const details = validationResult.error.details.map(detail => {
+					return {
+						type: detail.type,
+						path: detail.path,
+						message: detail.message
+					}
+				})
+
+				throw new ConflictException({
+					message: 'Error de validación',
+					details
+				})
 			} else {
-				console.log('Los datos son válidos.')
-			}
+				/**
+				 * No hay errores
+				 */
 
-			return true
+				this.requestLogger.log(`No hay errores de validación`)
+			}
 		} catch (err) {
-			console.error(err)
-			return false
+			throw new BadRequestException(`Error durante la validación: ${err.message}`)
 		}
 	}
 }

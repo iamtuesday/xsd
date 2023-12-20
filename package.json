@@ -33,13 +33,11 @@
 		"class-transformer": "^0.5.1",
 		"class-validator": "^0.14.0",
 		"joi": "^17.11.0",
-		"joi-to-json-schema": "^5.1.0",
-		"libxmljs": "^1.0.11",
 		"mongodb": "^4.16.0",
 		"rxjs": "^7.8.1",
 		"ts-proto": "^1.165.1",
 		"xml2js": "^0.6.2",
-		"xmldom": "^0.6.0"
+		"xmllint-wasm": "^4.0.2"
 	},
 	"devDependencies": {
 		"@arisale/tool-k8s-port-forward": "^0.1.75",

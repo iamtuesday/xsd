@@ -41,12 +41,8 @@
 	<cbc:ID
 		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">B002-00000015
 	</cbc:ID>
-	<cbc:IssueDate
-		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">2022-10-17
-	</cbc:IssueDate>
-	<cbc:IssueTime
-		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">10:13:04
-	</cbc:IssueTime>
+	<cbc:IssueDate xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">2022-10-17</cbc:IssueDate>
+	<cbc:IssueTime xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">10:13:04</cbc:IssueTime>
 	<cbc:InvoiceTypeCode
 		xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" listAgencyName="PE:SUNAT" listID="0101" listName="Tipo de Documento" listURI="urn:pe:gob:sunat:cpe:see:gem:catalogos:catalogo01">03
 	</cbc:InvoiceTypeCode>

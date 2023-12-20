@@ -16,7 +16,7 @@ export class XsdValidatorHttpController {
 
 	@AppOperation(Post(), 'xsd-validator')
 	@ApiOkResponse({ type: XsdValidationResponse })
-	async execute(@Body() validateDto: ValidateDto): Promise<XsdValidationResponse> {
-		return await this.xsdValidatorUseCase.execute(validateDto)
+	async execute(@Body() validateDto: ValidateDto): Promise<void> {
+		await this.xsdValidatorUseCase.execute(validateDto)
 	}
 }
